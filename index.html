@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Jobs</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+</head>
+<body>
+    <!--Side bar-->
+    <div class="sidebar"> 
+        <h1 class="logo">Job Portal</h1>
+        <div class="menus">
+            <a href="F:\Imagecon Reporting\IMAGECON INDIA\1.FRONTEND DEVELOPMENT\PROJECTS\Project - Job Portal\index.html"><ion-icon name="home-outline"></ion-icon>Home</a>
+            <a href=""><ion-icon name="newspaper-outline"></ion-icon>Find Jobs</a>
+            <a href=""><ion-icon name="stats-chart-outline"></ion-icon>Performance</a>
+            <a href=""><ion-icon name="bookmarks-outline"></ion-icon>Bookmarks</a>
+            <a href=""><ion-icon name="mail-unread-outline"></ion-icon>Message</a>
+            <a href=""><ion-icon name="settings-outline"></ion-icon>Setting</a> 
+        </div>
+        <!--add Profile-->
+         <div class="profile">
+            <img src="https://img.freepik.com/premium-vector/youtube-app-icon-social-media-logo-vector-illustration_277909-408.jpg?w=360" alt="" class="profile-img">
+            <div class="profile-name">
+                <h4>John Mickel</h4>
+                <p>Data Engineer</p>
+            </div>
+        
+         </div>
+         
+    </div>
+    <!--main-->
+    <div class="main">
+        <div class="main-header">
+            <ion-icon class="menu-bar" name="menu-outline"></ion-icon>
+            <div class="search">
+                <input type="text" name="" id="job-search" placeholder="Search a Job...">
+                <button class="btn-search"><ion-icon  name="search-outline"></ion-icon></button>
+            </div>
+        </div>
+        <!--Filter-->
+        <div class="filter-wrapper">
+            <p>Recommendations</p>
+            <div class="filter">
+                
+                <button class="btn-filter">Applied Jobs</button>
+                <button class="btn-filter">Job Saves</button>
+                <button class="btn-filter">Data Science</button>
+                <button class="btn-filter">Full Stack</button>
+                <button class="btn-filter">Front End</button>
+                <button class="btn-filter">Back End</button>
+                <button class="btn-filter">Programming</button>
+                
+            </div>
+
+        </div>
+        <!--Sort-->
+        <div class="sort">
+            <p>Sort</p>
+            <div class="sort-list">
+                <select name="" id="">
+                    <option value="0">All</option>
+                    <option value="1">0-2 Experiance</option>
+                    <option value="2">2+ Experiance</option>
+                    <option value="4">100-399 Salary</option>
+                    <option value="5">400+ Salary</option>
+                    <option value="6">Applied</option>
+                </select>
+            </div>
+        </div>
+        <!--Wrapper-->
+        <div class="wrapper">
+            <!--1st Card -->
+            <div class="card" id="amazon">
+                <div class="card-left blue-bg">
+                   <img src="https://cdn.iconscout.com/icon/free/png-256/free-amazon-68-722671.png?f=webp" alt="">
+                </div>
+                <div class="card-center">
+                    <h3>Amazon</h3>
+                    <p class="card-detail">Data Analytics</p>
+                    <p class="card-loc"><ion-icon name="location-outline"></ion-icon> Los Angles Center</p>
+                     <div class="card-sub">
+                        <p ><ion-icon name="today-outline"></ion-icon> 12 hour ago</p>
+                        <p ><ion-icon name="hourglass-outline"></ion-icon> Full-time</p>
+                        <p ><ion-icon name="people-outline"></ion-icon> 150+ Applicants</p>
+                     </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-tag">
+                        <h5>Division</h5>
+                        <a href="">Data Analytics</a>
+                    </div>
+                    <div class="card-salary">
+                        <p><b>$450k</b> <span>/ Year</span></p>
+                    </div>
+                    <p>2+ Years Exp</p>
+                </div>
+            </div>
+            <!--Card 2-->
+            <div class="card" id="netflix">
+                <div class="card-left blue-bg">
+                   <img src="https://cdn.icon-icons.com/icons2/3053/PNG/512/netflix_macos_bigsur_icon_189917.png" alt="">
+                </div>
+                <div class="card-center">
+                    <h3>Netflix</h3>
+                    <p class="card-detail">Data Engineer,Product Developer</p>
+                    <p class="card-loc"><ion-icon name="location-outline"></ion-icon> Los Angles Center</p>
+                     <div class="card-sub">
+                        <p ><ion-icon name="today-outline"></ion-icon> 8 hour ago</p>
+                        <p ><ion-icon name="hourglass-outline"></ion-icon> Full-time</p>
+                        <p ><ion-icon name="people-outline"></ion-icon> 100+ Applicants</p>
+                     </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-tag">
+                        <h5>Division</h5>
+                        <a href="">Data Engineer</a>
+                    </div>
+                    <div class="card-salary">
+                        <p><b>$400k</b> <span>/ Year</span></p>
+                    </div>
+                    <p>0-2 Years Exp</p>
+                </div>
+            </div>
+            <!--Card 3-->
+            <div class="card" id="zoho">
+                <div class="card-left blue-bg">
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/ZOHO.svg/1024px-ZOHO.svg.png" alt="">
+                </div>
+                <div class="card-center">
+                    <h3>ZOHO</h3>
+                    <p class="card-detail">Software Developer,Tester</p>
+                    <p class="card-loc"><ion-icon name="location-outline"></ion-icon> Chennai</p>
+                     <div class="card-sub">
+                        <p ><ion-icon name="today-outline"></ion-icon> 18 hour ago</p>
+                        <p ><ion-icon name="hourglass-outline"></ion-icon> Full-time</p>
+                        <p ><ion-icon name="people-outline"></ion-icon> 100 Applicants</p>
+                     </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-tag">
+                        <h5>Division</h5>
+                        <a href="">Developer</a>
+                    </div>
+                    <div class="card-salary">
+                        <p><b>$420k</b> <span>/ Year</span></p>
+                    </div>
+                    <p>2 Years Exp</p>
+                </div>
+            </div>
+            <!--Card 4-->
+            <div class="card" id="apple">
+                <div class="card-left blue-bg">
+                   <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="">
+                </div>
+                <div class="card-center">
+                    <h3>Apple</h3>
+                    <p class="card-detail">Application Developer,Ios</p>
+                    <p class="card-loc"><ion-icon name="location-outline"></ion-icon> Bangalore</p>
+                     <div class="card-sub">
+                        <p ><ion-icon name="today-outline"></ion-icon> 12 hour ago</p>
+                        <p ><ion-icon name="hourglass-outline"></ion-icon> Full-time</p>
+                        <p ><ion-icon name="people-outline"></ion-icon> 30 Applicants</p>
+                     </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-tag">
+                        <h5>Division</h5>
+                        <a href="">App Developer</a>
+                    </div>
+                    <div class="card-salary">
+                        <p><b>$520k</b> <span>/ Year</span></p>
+                    </div>
+                    <p>2 Years Exp</p>
+                </div>
+            </div>
+            <!--card 5-->
+            <div class="card" id="wipro">
+                <div class="card-left blue-bg">
+                   <img src="https://1000logos.net/wp-content/uploads/2021/05/Wipro-logo.png" alt="">
+                </div>
+                <div class="card-center">
+                    <h3>Wipro</h3>
+                    <p class="card-detail">Software Developer,Devops</p>
+                    <p class="card-loc"><ion-icon name="location-outline"></ion-icon> Bangalore</p>
+                     <div class="card-sub">
+                        <p ><ion-icon name="today-outline"></ion-icon> 6 hour ago</p>
+                        <p ><ion-icon name="hourglass-outline"></ion-icon> Full-time</p>
+                        <p ><ion-icon name="people-outline"></ion-icon> 300 Applicants</p>
+                     </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-tag">
+                        <h5>Division</h5>
+                        <a href="">Devops,Developers</a>
+                    </div>
+                    <div class="card-salary">
+                        <p><b>$380k</b> <span>/ Year</span></p>
+                    </div>
+                    <p>2+ Years Exp</p>
+                </div>
+            </div>
+            <!--Card 6-->
+            <div class="card" id="amazon">
+                <div class="card-left blue-bg">
+                   <img src="https://cdn.iconscout.com/icon/free/png-256/free-amazon-68-722671.png?f=webp" alt="">
+                </div>
+                <div class="card-center">
+                    <h3>Amazon</h3>
+                    <p class="card-detail">Data Science,Programming</p>
+                    <p class="card-loc"><ion-icon name="location-outline"></ion-icon> Mexico</p>
+                     <div class="card-sub">
+                        <p ><ion-icon name="today-outline"></ion-icon> 18 hour ago</p>
+                        <p ><ion-icon name="hourglass-outline"></ion-icon> Full-time</p>
+                        <p ><ion-icon name="people-outline"></ion-icon> 100+ Applicants</p>
+                     </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-tag">
+                        <h5>Division</h5>
+                        <a href="">Data Science</a>
+                    </div>
+                    <div class="card-salary">
+                        <p><b>$500k</b> <span>/ Year</span></p>
+                    </div>
+                  <p>2+ Years Exp</p>
+                </div>
+            </div>
+          <!--Card 7--->
+           <div class="card" id="apple1">
+                <div class="card-left blue-bg">
+                   <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="">
+                </div>
+                <div class="card-center">
+                    <h3>Apple</h3>
+                    <p class="card-detail">Programming,Data Structures</p>
+                    <p class="card-loc"><ion-icon name="location-outline"></ion-icon> Brazil</p>
+                     <div class="card-sub">
+                        <p ><ion-icon name="today-outline"></ion-icon> 10 hour ago</p>
+                        <p ><ion-icon name="hourglass-outline"></ion-icon> Full-time</p>
+                        <p ><ion-icon name="people-outline"></ion-icon> 80 Applicants</p>
+                     </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-tag">
+                        <h5>Division</h5>
+                        <a href="">Software Programmer</a>
+                    </div>
+                    <div class="card-salary">
+                        <p><b>$420k</b> <span>/ Year</span></p>
+                    </div>
+                  <p>0-2 Years Exp</p>
+                </div>
+            </div>
+          <!--8 card-->
+          <div class="card" id="netflix1">
+                <div class="card-left blue-bg">
+                   <img src="https://cdn.icon-icons.com/icons2/3053/PNG/512/netflix_macos_bigsur_icon_189917.png" alt="">
+                </div>
+                <div class="card-center">
+                    <h3>Netflix</h3>
+                    <p class="card-detail">Frontend Developer,UI/UX</p>
+                    <p class="card-loc"><ion-icon name="location-outline"></ion-icon> London</p>
+                     <div class="card-sub">
+                        <p ><ion-icon name="today-outline"></ion-icon> 18 hour ago</p>
+                        <p ><ion-icon name="hourglass-outline"></ion-icon> Full-time</p>
+                        <p ><ion-icon name="people-outline"></ion-icon> 200+ Applicants</p>
+                     </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-tag">
+                        <h5>Division</h5>
+                        <a href="">Frontend</a>
+                    </div>
+                    <div class="card-salary">
+                        <p><b>$150k</b> <span>/ Year</span></p>
+                    </div>
+                  <p>0-2 Years Exp</p>
+                </div>
+            </div>
+          <!---Card 9-->
+          <div class="card" id="zoho1">
+                <div class="card-left blue-bg">
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/ZOHO.svg/1024px-ZOHO.svg.png" alt="">
+                </div>
+                <div class="card-center">
+                    <h3>ZOHO</h3>
+                    <p class="card-detail">Devops,Cloud</p>
+                    <p class="card-loc"><ion-icon name="location-outline"></ion-icon> Chennai</p>
+                     <div class="card-sub">
+                        <p ><ion-icon name="today-outline"></ion-icon> 14 hour ago</p>
+                        <p ><ion-icon name="hourglass-outline"></ion-icon> Full-time</p>
+                        <p ><ion-icon name="people-outline"></ion-icon> 50 Applicants</p>
+                     </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-tag">
+                        <h5>Division</h5>
+                        <a href="">Cloud Computing</a>
+                    </div>
+                    <div class="card-salary">
+                        <p><b>$320k</b> <span>/ Year</span></p>
+                      
+                    </div>
+                  <p>2 Years Exp</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   <!--Right Sections Job Details-->
+
+   <div class="detail">
+    <ion-icon class="close-detail" name="close-outline"></ion-icon>
+    <div class="detail-header">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-amazon-68-722671.png?f=webp" alt="">
+        <h2>Amazon</h2>
+        <p></p>
+    </div>
+    <hr class="divider">
+    <div class="detail-desc">
+        <div class="about">
+            <h4>About Company</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam et dolorem totam, quam id commodi suscipit ipsam magni reprehenderit minus dolore laboriosam autem sed ullam eum voluptatem at voluptatibus voluptatum!</p>
+            <a href="">Read More..</a>
+        </div>
+        <hr class="divider">
+        <div class="qualification">
+            <h4>Qualification</h4>
+            <ul>
+                <li>Completed a UG or PG</li>
+                <li>Good in Problem Solving and one Programming</li>
+                <li>Minimum 2 Years Experiance</li>
+            </ul>
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="detail-btn">
+        <button class="btn-apply" onclick="fun()">Apply Now</button>
+        <button class="btn-save">Save Job</button>
+    </div>
+   </div>
+
+
+    
+    
+  
+ 
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="app.js"></script>
+</html>
